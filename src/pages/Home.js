@@ -56,7 +56,7 @@ function Home() {
                     {/* ---------------------------------- */}
                     <img src="/my_picture.jpg" alt="Anna Gracheva" style={{ width: '360px', height: '470px' }} />
                 </section>
-                <section>
+                <section className="interests-list">
                     {/* ---------------------------------- */}
                     {/*           INTERESTS LIST           */}
                     {/* ---------------------------------- */}
@@ -71,7 +71,7 @@ function Home() {
                     {/* ---------------------------------- */}
                     {/*          REORDER BUTTON            */}
                     {/* ---------------------------------- */}
-                    <button onClick={reorderList} style={{ marginTop: '4px', backgroundColor: '#007bff', color: '#fff', fontWeight: 'bold', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer' }}>Reorder Interests</button>
+                    <button onClick={reorderList} style={{ marginTop: '4px', backgroundColor: 'green', color: '#fff', fontWeight: 'bold', padding: '8px 16px', borderRadius: '4px', cursor: 'pointer' }}>Reorder Interests</button>
                 </section>
             </main>
         </div >

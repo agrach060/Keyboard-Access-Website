@@ -1,3 +1,7 @@
 .thingsToRead {
     height: 100vh;
 }
+
+.thingsToRead a:visited {
+    color: black;
+}

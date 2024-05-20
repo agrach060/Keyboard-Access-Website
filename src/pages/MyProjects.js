@@ -13,14 +13,14 @@ const projects = [
         description: 'This simple shell program, inspired by Unix shells, allows users to interact with the operating system via a command-line interface. It supports executing commands, running processes in the background, a history feature to re-execute the last command, input/output redirection, and piping between commands.',
     },
     {
-        image: '/images/TFTP-protocol.jpeg',
+        image: '/images/TFTP-protocol.png',
         title: 'TFTP Protocol',
         description: 'This project provides a complete implementation of the Trivial File Transfer Protocol (TFTP) for file transfer between a client and a server. TFTP is a simple, lock-step, file transfer protocol that allows a client to get from or put a file onto a remote host. One of its primary uses is in the early stages of nodes booting from a local area network.',
     },
     {
         image: '/images/Assembly.png',
         title: 'Assembly',
-        description: 'Project 4 description',
+        description: 'In this project, we delved into the intricate world of Assembly language to implement core C functions at a low level.',
     },
     {
         image: 'images/MazeSolver.png',
@@ -30,7 +30,7 @@ const projects = [
     {
         image: 'images/SkipList.png',
         title: 'SkipList',
-        description: 'Working with pointers and linked lists',
+        description: 'The SkipList project involved the implementation of a SkipList data structure, a versatile and efficient alternative to traditional linked lists and binary search trees.',
     },
 ];
 
@@ -38,16 +38,18 @@ const MyProjects = () => {
     return (
         <div className="page-container">
             <h1 className="header">My Projects</h1>
+            <h2 style={{ fontStyle: 'italic' }}>Check out some of my best projects!</h2>
             <div className="projects-container">
                 {projects.map((project, index) => (
                     <div key={index} className="project-box">
-                        <div className="project-image">
-                            <img src={project.image} alt={`Project ${index + 1}`} />
-                        </div>
-                        <div className="divider"></div>
-                        <div className="project-title"><h3>{project.title}</h3></div>
-                        <div className="project-description">
-                            <p>{project.description}</p>
+                        <div className="project-content">
+                            <div className="project-image">
+                                <img src={project.image} alt={`Project ${index + 1}`} />
+                            </div>
+                            <div className="project-description">
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+                            </div>
                         </div>
                     </div>
                 ))}

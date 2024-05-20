@@ -8,7 +8,8 @@ function NavigationBar() {
 
     const links = [
         { path: "/", label: "Home" },
-        { path: "/ThingsToRead", label: "Things to Read" }
+        { path: "/ThingsToRead", label: "Things to Read" },
+        { path: "/MyProjects", label: "My Projects" }
     ];
 
     useEffect(() => {
